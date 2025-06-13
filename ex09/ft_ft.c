@@ -6,13 +6,25 @@
 /*   By: urabex <urabex@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 23:13:42 by urabex            #+#    #+#             */
-/*   Updated: 2025/06/12 23:14:51 by urabex           ###   ########.fr       */
+/*   Updated: 2025/06/13 22:51:59 by urabex           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 void ft_ft(int *nbr);
 
 void ft_ft(int *nbr)
 {
     *nbr = 42;
+}
+
+int main(void)
+{
+    int a;
+    a = 0;
+    
+    ft_ft(&a);
+    printf("a = %d\n", a);
+    return (0);    
 }
